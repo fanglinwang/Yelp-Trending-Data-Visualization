@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="renderer" content="webkit">
+    <!-- <base href="http://[::]:8000/www/"> -->
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <!-- <meta name="viewport" content="width-device-width, initial-scale=1.0"> -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+        integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+        integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM=" crossorigin=""></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB1I0ywifKJXlCc0OxgnygKt1nDFOVHsdE"></script>
+    <title>Fanglin's First Try</title>
+
+</head>
+
+<body>
+    <header>
+        <div class="hero">
+            <nav>
+                <h2 class="logo">Yelp <span>Data Analysis</span></h2>
+                <ul>
+                    <li><a href="https://wangcrab.com/">Worldwide</a></li>
+                    <li><a href="#">Vancouver</a></li>
+                    <li><a href="#">Review Analysis</a></li>
+                    <li><a href="#">About us</a></li>
+                    <!-- <li><a href="#">Home</a></li> -->
+                </ul>
+                <button><span>King Crab's<br></span>Github</button>
+            </nav>
+        </div>
+    </header>
+    <div class="mainbox">
+        <div class="column">
+            <div class="panel bar">
+                <h2>Top 10 Cities</h2>
+                <div class="chart"></div>
+            </div>
+            <div class="panel line">
+                <h2>Restaurant Performance</h2>
+                <div class="chart"></div>
+            </div>
+            <div class="panel">
+                <h2>Restaurant Performance</h2>
+            </div>
+        </div>
+        <div class="column">
+            <div class="no">
+                <div class="no-hd">
+                    <ul>
+                        <li>160585</li>
+                        <li>8635403</li>
+
+                    </ul>
+                </div>
+                <div class="no-bd">
+                    <ul>
+                        <li>Total Number of Business</li>
+                        <li>Total Number of Reviews</li>
+
+                    </ul>
+                </div>
+            </div>
+            <div class="map">
+                <div class="chart" id="mymap"></div>
+            </div>
+        </div>
+        <div class="column">
+            <div class="panel bar2">
+                <h2>Restaurant Performance</h2>
+                <div class="chart"></div>
+            </div>
+            <div class="panel">
+                <h2>Restaurant Performance</h2>
+            </div>
+            <div class="panel">
+                <h2>Restaurant Performance</h2>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/echarts.js"></script>
+    <script src="js/echarts-gl.js"></script>
+    <script src="js/jquery.min.js"></script>
+
+    <script src="js/world.js"></script>
+
+    <!-- import echarts-extension-gmap -->
+    <!-- <script src="js/echarts-extension-gmap.min.js"></script> -->
+    <!-- import JavaScript API of Google Map, please replace the key with your own key -->
+    <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB1I0ywifKJXlCc0OxgnygKt1nDFOVHsdE"></script> -->
+
+    <!-- please replace {key} with your own API key -->
+    <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB1I0ywifKJXlCc0OxgnygKt1nDFOVHsdE"></script> -->
+    <!-- echarts CDN -->
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/echarts@5/dist/echarts.min.js"></script>
+    <!-- echarts gmap extension -->
+    <!-- <script type="text/javascript" src="../dist/echarts-extension-gmap.min.js"></script> -->
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/echarts-extension-gmap@1.5.0/dist/echarts-extension-gmap.min.js"></script>
+
+    <!-- Make sure you put this AFTER Leaflet's CSS -->
+
+    <script src="js/vintage.js"></script>
+    <script src="js/index.js"></script>
+
+
+
+</body>
+
+</html>
