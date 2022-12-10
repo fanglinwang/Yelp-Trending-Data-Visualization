@@ -14,7 +14,7 @@
     <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
         integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM=" crossorigin=""></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB1I0ywifKJXlCc0OxgnygKt1nDFOVHsdE"></script>
-    <title>Fanglin's First Try</title>
+    <title>CMPT732 project: Yelp Data Analysis</title>
 
 </head>
 
@@ -24,36 +24,38 @@
             <nav>
                 <h2 class="logo">Yelp <span>Data Analysis</span></h2>
                 <ul>
-                    <li><a href="https://wangcrab.com/">Worldwide</a></li>
-                    <li><a href="#">Vancouver</a></li>
-                    <li><a href="#">Review Analysis</a></li>
-                    <li><a href="#">About us</a></li>
+                    <li><a href="https://wangcrab.com/">Home</a></li>
+                    <li><a href="https://wangcrab.com/reviews">Review Analysis</a></li>
+                    <!-- <li><a href="#">About us</a></li> -->
                     <!-- <li><a href="#">Home</a></li> -->
                 </ul>
-                <button><span>King Crab's<br></span>Github</button>
+                <button><a
+                        href="https://github.com/fanglinwang/final_project_cmpt732_King_Crab/settings/access?guidance_task="><span>King
+                            Crab's<br></span>Github</a></button>
             </nav>
         </div>
     </header>
     <div class="mainbox">
         <div class="column">
             <div class="panel bar">
-                <h2>Top 10 Cities</h2>
+                <h2>Top 8 Catagories</h2>
                 <div class="chart"></div>
             </div>
-            <div class="panel line">
-                <h2>Restaurant Performance</h2>
+            <div class="panel left2">
+                <h2>Greater Vancouver 4.5-5 Stars Restaurants (Top 8 with the most reviews)</h2>
                 <div class="chart"></div>
             </div>
-            <div class="panel">
-                <h2>Restaurant Performance</h2>
+            <div class="panel left3">
+                <h2>Reviews Distribution in a Day and a Week</h2>
+                <div class="chart"></div>
             </div>
         </div>
         <div class="column">
             <div class="no">
                 <div class="no-hd">
                     <ul>
-                        <li>160585</li>
-                        <li>8635403</li>
+                        <li>17294</li>
+                        <li>602269</li>
 
                     </ul>
                 </div>
@@ -71,14 +73,16 @@
         </div>
         <div class="column">
             <div class="panel bar2">
-                <h2>Restaurant Performance</h2>
+                <h2>Top 5 Most Common Restaurants' Performance</h2>
+                <div class="chart"></div>
+            </div>
+            <div class="panel line">
+                <h2>User Amounts, Stars and Reviews Avg Numbers (2005-2021)</h2>
                 <div class="chart"></div>
             </div>
             <div class="panel">
-                <h2>Restaurant Performance</h2>
-            </div>
-            <div class="panel">
-                <h2>Restaurant Performance</h2>
+                <h2>Word Cloud of Reviews</h2>
+                <div class="chart"><img src="pics/wordcloud.png"></div>
             </div>
         </div>
     </div>
